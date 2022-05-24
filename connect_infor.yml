@@ -1,0 +1,5 @@
+host_name: "localhost"
+database: "eco_stock"
+user_name: "postgres"
+password: "newpassword"
+port: 5439

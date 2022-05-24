@@ -1,0 +1,43 @@
+CREATE TABLE cafef_hose (
+	ma_ck VARCHAR(8) NOT NULL,
+	tc VARCHAR(10),
+	tran VARCHAR(10),
+	san VARCHAR(10),
+	bm_gia3 VARCHAR(10),
+	bm_kl3 VARCHAR(10),
+	bm_gia2 VARCHAR(10),
+	bm_kl2 VARCHAR(10),
+	bm_gia1 VARCHAR(10),
+	bm_kl1 VARCHAR(10),
+	kl_chenhlech VARCHAR(10),
+	kl_gia VARCHAR(10),
+	kl_kl VARCHAR(10),
+	kl_tong_kl VARCHAR(10),
+	bb_gia1 VARCHAR(10),
+	bb_kl1 VARCHAR(10),
+	bb_gia2 VARCHAR(10),
+	bb_kl2 VARCHAR(10),
+	bb_gia3 VARCHAR(10),
+	bb_kl3 VARCHAR(10),
+	cao VARCHAR(10),
+	thap VARCHAR(10),
+	mua VARCHAR(10)
+);
+
+DROP TABLE transaction_eco IF EXISTS;
+
+-- Create a temp table to save data for history_data_per_stock.exe or .py
+
+CREATE table transaction_eco (
+	ten_co_phieu text,
+	ngay_giao_dich text,
+	gio_giao_dich time,
+	gia text,
+	chenh_lech text,
+	phan_tram text,
+	khoi_luong_lo text,
+	khoi_luong_tich_luy text,
+	ty_trong text
+);
+
+DELETE FROM transaction_eco;
